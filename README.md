@@ -1,6 +1,12 @@
 # TrainingNgDirectives
 
+Based on the Udemy course [The Modern Angular Bootcamp](https://tsys.udemy.com/course/the-modern-angular-bootcamp/) by Stephen Grider.
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.8.
+
+## Latest release
+
+TBD
 
 ## Development server
 
