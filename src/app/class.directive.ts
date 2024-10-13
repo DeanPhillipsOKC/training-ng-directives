@@ -5,7 +5,7 @@ import { Directive, ElementRef, Input } from '@angular/core';
   standalone: true
 })
 export class ClassDirective {
-  @Input() set backgroundColor(color: string) {
+  @Input('appClass') set backgroundColor(color: string) {
     this.element.nativeElement.style.backgroundColor = color;
   }
 
