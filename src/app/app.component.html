@@ -1,6 +1,6 @@
 <nav>
   <ul class="pagination">
-    <li class="page-item" [ngClass]="{ disabled: currentPage === 0 }">
+    <li class="page-item" appClass [ngClass]="{ disabled: currentPage === 0 }">
       <a class="page-link" (click)="onPageChanged(currentPage - 1)">Prev</a>
     </li>
     <ng-container *ngFor="let image of images; let i = index;">
@@ -21,19 +21,4 @@
 <div>
   <h4>{{ images[currentPage].title }}</h4>
   <img [src]="images[currentPage].url" class="img-fluid">
-</div>
-
-<div [ngSwitch]="currentPage">
-  <div *ngSwitchCase="0">
-    <p>This is the first image</p>
-  </div>
-  <div *ngSwitchCase="1">
-    <p>This is the second image</p>
-  </div>
-  <div *ngSwitchCase="2">
-    <p>This is the third image</p>
-  </div>
-  <div *ngSwitchDefault>
-    <p>This is a default image</p>
-  </div>
 </div>
